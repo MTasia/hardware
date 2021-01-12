@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    src:
+      url("./fonts/PTSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans Caption";
+    font-style: normal;
+    font-weight: normal;
+    src:
+      url("./fonts/PTSansCaption-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans Bold";
+    font-style: normal;
+    font-weight: bold;
+    src:
+        url("./fonts/PTSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Brutal Type";
+    font-style: normal;
+    font-weight: normal;
+    src:
+      url("./fonts/BrutalRegular.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: initial;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sants";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 0 auto;
+}
+
+.wrapper {
+    background: linear-gradient(360deg, #223036 0%, #223036 100%);
+    width: 1200px;
+    height: 173px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 370px;
+    height: 80px;
+
+    margin-top: 49px;
+    margin-left: 47px;
+}
+
+.header-caption {
+    width: 658px;
+    height: 87px;
+
+    margin-top: 46px;
+    margin-left: 57px;
+}
+
+.header-caption p {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.header-auth {
+    width: 40px;
+    height: 13px;
+
+    margin-top: 12px;
+    margin-left: 9px;
+}
+
+.header-auth a{
+    font-family: "PT Sans Bold", sans-serif;
+    font-size: 15px;
+    line-height: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-menu{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin-top: 1px;
+    width: 1200px;
+    height: 48px;
+}
+
+.header-menu-wrapper {
+    display: flex;
+    width: 476px;
+    height: 17px;    
+    margin-top: 17px;    
+}
+
+.header-list{
+    display: flex;
+    border: 1px solid black;
+}
+
+.header-item {
+    margin-left: 49px;
+}
+
+.header-item:first-child {
+    margin-left: 42px;
+}
+
+.header-menu-icon {
+    margin-left: 47px;
+}
+
+.header-search-icon {
+    margin-left: 594px;
+}
+
+.header-item a{
+    font-family: "Brutal Type";
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+}
