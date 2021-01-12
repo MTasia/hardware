@@ -128,23 +128,15 @@ body {
 
 .header-list{
     display: flex;
-    border: 1px solid black;
 }
 
 .header-item {
+    color: #FFFFFF;
     margin-left: 49px;
 }
 
 .header-item:first-child {
     margin-left: 42px;
-}
-
-.header-menu-icon {
-    margin-left: 47px;
-}
-
-.header-search-icon {
-    margin-left: 594px;
 }
 
 .header-item a{
@@ -154,4 +146,12 @@ body {
     color: #000000;
     letter-spacing: -0.02em;
     text-decoration: none;
+}
+
+.header-menu-icon {
+    margin-left: 47px;
+}
+
+.header-search-icon {
+    margin-left: 594px;
 }
