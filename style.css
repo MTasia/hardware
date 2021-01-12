@@ -72,6 +72,8 @@ body {
 }
 
 .header-logo {
+    width: 370px;
+    height: 80px;
     margin-top: 49px;
     margin-left: 47px;
 }
