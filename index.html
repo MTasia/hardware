@@ -8,8 +8,8 @@
         <title>Hardware</title>
     </head>
     <body>
-        <header class="header">
-            <div class="wrapper">
+        <div class="body-wrapper">
+            <header class="header">
                 <div class="header-wrapper">
                     <div class="header-logo">
                         <a href="#logo" class="header-logo-link"><img src="./img/logo.svg" alt="Логотип" class="header-logo-pic"></a>
@@ -18,7 +18,7 @@
                         <p>
                             Здесь думающие ​люди ​делятся ​уникальным ​​опытом. ​​Здесь будет ​​одинаково ​интересно<br>
                             ​программистам ​и журналистам, ​​админам ​и рекламщикам, ​аналитикам ​и дизайнерам,<br>
-                            ​менеджерам ​высшего ​и среднего ​звена, владельцам ​крупных ​компаний ​и небольших ​фирм,<br>
+                            ​менеджерам ​высшего ​и среднего ​звена, владельцам ​крупных ​компаний ​и небольших ​фирм, <br>
                             а также ​всем ​тем, ​для кого ​IT — ​это не просто ​две буквы ​алфавита.
                         </p>
                     </div>
@@ -26,26 +26,436 @@
                         <a href="#auth" class="header-auth-link">Вход</a>
                     </div>
                 </div>
-            </div>
-            <div class="header-menu">
-                <div class="header-menu-wrapper">
-                    <div class="header-menu-icon">
-                        <a class="header-menu-icon-link"><img src="img/icon-menu.svg" alt="Иконка меню" class="header-menu-icon-pic"></a>
-                    </div>
-                    <nav class="header-nav">
-                        <ul class="header-list">
-                            <li class="header-item"><a href="#news">Новости</a></li>
-                            <li class="header-item"><a href="#video">Видео</a></li>
-                            <li class="header-item"><a href="#tests">Тесты</a></li>
-                            <li class="header-item"><a href="#series">Серии</a></li>
-                            <li class="header-item"><a href="#rubric">Рубрики</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header-search-icon">
-                        <a class="header-icon-search-link"><img src="img/icon-search.svg" alt="Иконка поиска" class="header-search-incon-pic"></a>
+                <div class="header-menu">
+                    <div class="header-menu-wrapper">
+                        <div class="header-menu-icon">
+                            <a class="header-menu-icon-link"><img src="img/icon-menu.svg" alt="Иконка меню" class="header-menu-icon-pic"></a>
+                        </div>
+                        <nav class="header-nav">
+                            <ul class="header-list">
+                                <li class="header-item"><a class="header-item-news" href="#news">Новости</a></li>
+                                <li class="header-item"><a class="header-item-video" href="#video">Видео</a></li>
+                                <li class="header-item"><a class="header-item-tests" href="#tests">Тесты</a></li>
+                                <li class="header-item"><a class="header-item-series" href="#series">Серии</a></li>
+                                <li class="header-item"><a class="header-item-rubric" href="#rubric">Рубрики</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-search-icon">
+                            <a class="header-icon-search-link"><img src="img/icon-search.svg" alt="Иконка поиска" class="header-search-incon-pic"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+    
+            <main class="main">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="heading-wrapper">
+                            <h1 class="heading">Сегодня в выпуске</h1>
+                        </div>
+                        <div class="issue-list">
+                            <section class="notepad-wrapper">
+                                <div class="notepad-content">
+                                    <div class="link notepad-link">
+                                        <a class="link-text">сделай сам</a>
+                                    </div>
+                                    <div class="notepad-heading">
+                                        <h2 class="heading-text">Блокнот с осциллографом и генератором частот (звуковой картой)</h2>
+                                    </div>
+                                    <div class="notepad-caption">
+                                        <p class="caption-text">
+                                            Решил немного написать про свою поделку. Несколько раз попадались разнообразные diy линейки. 
+                                            Захотелось сделать себе что-то подобное, многофункциональное. Форм-фактор линейки мне не очень подходил, 
+                                            решил сделать в виде блокнота.
+                                        </p>
+                                    </div>
+                                    <div class="notepad-smm">
+                                        <p class="source-text">
+                                            GMaksim2008 / <time datetime="2020-03-22T03:02" class="datatime-text">22 марта, 12:15</time>
+                                        </p>
+                                        <ul class="smm-list notepad-smm-list">
+                                            <li class="smm-item">
+                                                <img src="./img/veiws-icon.svg" alt="Иконка просмотров">
+                                                <p class="subtext">4567</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/dogs-icon.svg" alt="Иконка собачки">
+                                                <p class="subtext">12</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/comments-icon.svg" alt="Иконка комментария">
+                                                <p class="subtext">45</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/reposts-icon.svg" alt="Иконка репоста">
+                                                <p class="subtext">678</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="antiquities-wrapper">
+                                <div class="antiquities-content">
+                                    <div class="link antiquities-link">
+                                        <a class="link-text">железо</a>
+                                    </div>
+                                    <div class="antiquities-heading">
+                                        <h2 class="heading-text">Древности: удаленная работа на устройствах 1998 года</h2>
+                                    </div>
+                                    <div class="antiquities-caption">
+                                        <p class="caption-text">
+                                            Поговорим о старых железках. В 2020 году у нас есть множество инструментов удаленной работы — от традиционной 
+                                            электронной почты, до весьма совершенных мессенджеров, веб-конференций с...
+                                        </p>
+                                    </div>
+                                    <div class="antiquities-smm">
+                                        <p class="antiquities-source-text source-text">
+                                            f15 / <time datetime="2020-03-22T03:02" class="datatime-text">22 марта, 12:15</time>
+                                        </p>
+                                        <ul class="smm-list">
+                                            <li class="smm-item">
+                                                <img src="./img/veiws-icon.svg" alt="Иконка просмотров">
+                                                <p class="subtext">4567</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/dogs-icon.svg" alt="Иконка собачки">
+                                                <p class="subtext">12</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/comments-icon.svg" alt="Иконка комментария">
+                                                <p class="subtext">45</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/reposts-icon.svg" alt="Иконка репоста">
+                                                <p class="subtext">678</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cluster-elasticsearch-wrapper">
+                                <div class="cluster-elasticsearch-content">
+                                    <div class="link cluster-elasticsearch-link">
+                                        <a class="link-text">железо</a>
+                                    </div>
+                                    <div class="cluster-elasticsearch-heading">
+                                        <h2 class="heading-text">Кластер Elasticsearch на 200 ТБ+</h2>
+                                    </div>
+                                    <div class="cluster-elasticsearch-smm">
+                                        <p class="cluster-elasticsearch-source-text source-text">
+                                            entropicus / <time datetime="2020-03-22T03:02" class="datatime-text">22 марта, 12:15</time>
+                                        </p>
+                                        <ul class="smm-list cluster-elasticsearch-smm-list">
+                                            <li class="smm-item">
+                                                <img src="./img/veiws-icon.svg" alt="Иконка просмотров">
+                                                <p class="subtext">4567</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/dogs-icon.svg" alt="Иконка собачки">
+                                                <p class="subtext">12</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/comments-icon.svg" alt="Иконка комментария">
+                                                <p class="subtext">45</p>
+                                            </li>
+                                            <li class="smm-item">
+                                                <img src="./img/reposts-icon.svg" alt="Иконка репоста">
+                                                <p class="subtext">678</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="annot">
+                                <p class="annot-text">
+                                    На сегодня это всё! Приходите завтра почитать <span class="annot-text-bold">об эффективной работе из дома,  о том как Crash<br>
+                                    Bandicoot взламывал Playstation,  о том с чего начиналось IT и об анатомии таблиц LuaJIT и особенностях<br> 
+                                    их использования.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <nav class="nav-list-of-best">
+                            <ul class="list-of-best">
+                                <li class="list-of-best-item"><a href="#month" class="item-month underline">Лучшее за месяц</a></li>
+                                <li class="list-of-best-item"><a href="#year" class="item-year">Лучшее за год</a></li>
+                                <li class="list-of-best-item"><a href="#alltime" class="item-alltime">Лучшее за все время</a></li>
+                            </ul>
+                            <div class="sign">
+                                <a href="#sign" class="sign-link"><img src="./img/sign.svg" alt="Указатель" class="sign-pic"></a>
+                            </div>
+                        </nav>
+                        <div class="article">
+                            <div class="article-1">
+                                <div class="article-1-wrapper">
+                                    <p class="article-text">
+                                        AI Против COVID-19: Опыт Хубэя и Флориды
+                                    </p>
+                                    <ul class="smm-list">
+                                        <li class="smm-item">
+                                            <img src="./img/veiws-icon.svg" alt="Иконка просмотров">
+                                            <p class="subtext">4567</p>
+                                        </li>
+                                        <li class="smm-item">
+                                            <img src="./img/dogs-icon.svg" alt="Иконка собачки">
+                                            <p class="subtext">12</p>
+                                        </li>
+                                        <li class="smm-item">
+                                            <img src="./img/comments-icon.svg" alt="Иконка комментария">
+                                            <p class="subtext">45</p>
+                                        </li>
+                                        <li class="smm-item">
+                                            <img src="./img/reposts-icon.svg" alt="Иконка репоста">
+                                            <p class="subtext">678</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="article-2">
+                                <p class="article-text">
+                                    Биологические проблемы багфикса
+                                </p>
+                                <ul class="smm-list">
+                                    <li class="smm-item">
+                                        <img src="./img/veiws-icon.svg" alt="Иконка просмотров">
+                                        <p class="subtext">4567</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/dogs-icon.svg" alt="Иконка собачки">
+                                        <p class="subtext">12</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/comments-icon.svg" alt="Иконка комментария">
+                                        <p class="subtext">45</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/reposts-icon.svg" alt="Иконка репоста">
+                                        <p class="subtext">678</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="article-3">
+                                <p class="article-text">
+                                    Цели дня как инструмент управления командой
+                                </p>
+                                <ul class="smm-list">
+                                    <li class="smm-item">
+                                        <img src="./img/veiws-icon.svg" alt="Иконка просмотров">
+                                        <p class="subtext">4567</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/dogs-icon.svg" alt="Иконка собачки">
+                                        <p class="subtext">12</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/comments-icon.svg" alt="Иконка комментария">
+                                        <p class="subtext">45</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/reposts-icon.svg" alt="Иконка репоста">
+                                        <p class="subtext">678</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="heading-wrapper">
+                            <h2 class="heading">Серии</h2>
+                        </div>
+                        <div class="block">
+                            <div class="block-content block-content-1">
+                                <div class="block-head">
+                                    <h3 class="block-head-text">HARDWARE против заблуждений</h3>
+                                </div>
+                                <div class="block-list-wrapper">
+                                    <ul class="block-list">
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text">
+                                                Мифы в IT-образовании
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text">
+                                                25 самых популярных мифов о программировании и программистах
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="block-link">
+                                    <a href="#" class=" block-link-text">Читать 27 статей</a>
+                                </div>
+                            </div>
+                            <div class="block-content">
+                                <div class="block-head">
+                                    <h3 class="block-head-text">HARDWARE против заблуждений</h3>
+                                </div>
+                                <div class="block-list-wrapper">
+                                    <ul class="block-list">
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text">
+                                                Мифы в IT-образовании
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text">
+                                                25 самых популярных мифов о программировании и программистах
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="block-link">
+                                    <a href="#" class=" block-link-text">Читать 27 статей</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="aside">
+                    <div class="aside-series aside-item">
+                        <div class="aside-content">
+                            <div class="aside-header aside-header-series">
+                                <div class="aside-topic">
+                                    <div class="aside-topic-text">Серии</div>
+                                </div>
+                                <div class="aside-topic-link">
+                                    <a href="#" class="aside-topic-link-text">Все серии</a>
+                                </div>
+                            </div>
+                            <div class="aside-series-head">
+                                <h3 class="aside-series-head-text">HARDWARE против заблуждений</h3>
+                            </div>
+                            <div class="aside-series-list-wrapper">
+                                <ul class="aside-series-list">
+                                    <li class="aside-list-item">
+                                        <div class="aside-list-item-text">
+                                            Мифы в IT-образовании
+                                        </div>
+                                    </li>
+                                    <li class="aside-list-item">
+                                        <div class="aside-list-item-text">
+                                            У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих<br> IT-заблуждений в истории
+                                        </div>
+                                    </li>
+                                    <li class="aside-list-item">
+                                        <div class="aside-list-item-text">
+                                            У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих<br> IT-заблуждений в истории
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aside-link">
+                                <a href="#" class=" aside-link-text">Читать 27 статей</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-tests aside-item">
+                        <div class="aside-content">
+                            <div class="aside-header aside-header-tests">
+                                <div class="aside-topic">
+                                    <div class="aside-topic-text">Тесты</div>
+                                </div>
+                                <div class="aside-topic-link">
+                                    <a href="#" class="aside-topic-link-text">Все тесты</a>
+                                </div>
+                            </div>
+                            <div class="aside-tests-head-wrapper">
+                                <div class="aside-tests-head">
+                                    <h3 class="aside-tests-head-text">Тест: Как хорошо вы знаете HTML и CSS?</h3>
+                                </div>
+                                <ul class="smm-list tests-smm-list">
+                                    <li class="smm-item">
+                                        <img src="./img/veiws-icon.svg" alt="Иконка просмотров">
+                                        <p class="subtext">4567</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/dogs-icon.svg" alt="Иконка собачки">
+                                        <p class="subtext">12</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/comments-icon.svg" alt="Иконка комментария">
+                                        <p class="subtext">45</p>
+                                    </li>
+                                    <li class="smm-item">
+                                        <img src="./img/reposts-icon.svg" alt="Иконка репоста">
+                                        <p class="subtext">678</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aside-link">
+                                <a href="#" class=" aside-link-text">Пройти тест</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-video aside-item">
+                        <div class="aside-content">
+                            <div class="aside-header">
+                                <div class="aside-topic">
+                                    <div class="aside-topic-text">Видео</div>
+                                </div>
+                                <div class="aside-topic-link">
+                                    <a href="#" class="aside-topic-link-text">Все видео</a>
+                                </div>
+                            </div>
+                            <div class="aside-video-wrapper">
+                                <video class="video-source"></video>
+                                <img class="video-play-button" src="./img/play.svg" alt="icon play">                               
+                            </div>
+                            <div class="aside-video-text">
+                                <p>Учим HTML за 1 Час!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-news aside-item">
+                        <div class="aside-content">
+                            <div class="aside-header aside-header-news">
+                                <div class="aside-topic">
+                                    <div class="aside-topic-text">Новости</div>
+                                </div>
+                                <div class="aside-topic-link">
+                                    <a href="#" class="aside-topic-link-text">Все новости</a>
+                                </div>
+                            </div>
+                            <div class="aside-news-date">
+                                <time datetime="2020-04-24" class="aside-data-text">24 апреля</time>
+                                <div class="aside-news-time">
+                                    <div class="aside-news-time-text">15.00</div>
+                                </div>
+                            </div>
+                            <div class="aside-news-text">
+                                <p>NVIDIA расширяет бесплатный 90-дневный доступ к ПО для поддержки удаленных работников</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </main>
+        </div>
     </body>
 </html>
