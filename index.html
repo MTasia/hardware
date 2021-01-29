@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style-main.css">
+        <link rel="stylesheet" href="./style-header.css">
+        <link rel="stylesheet" href="./style-aside.css">
         <title>Hardware</title>
     </head>
     <body>
@@ -14,13 +15,17 @@
                     <div class="header-logo">
                         <a href="#logo" class="header-logo-link"><img src="./img/logo.svg" alt="Логотип" class="header-logo-pic"></a>
                     </div>
+                    <div class="header-logo-320">
+                        <a href="#logo" class="header-logo-link"><img src="./img/logo-320.png" alt="Логотип" class="header-logo-pic"></a>
+                    </div>
                     <div class="header-caption">
-                        <p>
-                            Здесь думающие ​люди ​делятся ​уникальным ​​опытом. ​​Здесь будет ​​одинаково ​интересно<br>
-                            ​программистам ​и журналистам, ​​админам ​и рекламщикам, ​аналитикам ​и дизайнерам,<br>
-                            ​менеджерам ​высшего ​и среднего ​звена, владельцам ​крупных ​компаний ​и небольших ​фирм, <br>
-                            а также ​всем ​тем, ​для кого ​IT — ​это не просто ​две буквы ​алфавита.
-                        </p>
+                        <p>Здесь думающие ​люди ​делятся ​уникальным ​​опытом. ​​Здесь будет ​​одинаково ​интересно программистам ​и журналистам, ​​админам ​и рекламщикам, ​аналитикам ​и дизайнерам, ​менеджерам ​высшего ​и среднего ​звена, владельцам ​крупных ​компаний ​и небольших ​фирм, а также ​всем ​тем, ​<span class="not-divide">для кого</span> ​IT — ​это не просто ​две буквы ​алфавита.</p>
+                    </div>
+                    <div class="header-icon">
+                        <a class="header-icon-link"><img src="./img/header-menu-icon.svg" alt="Иконка меню" class="header-menu-icon-pic"></a>
+                    </div>
+                    <div class="header-search">
+                        <a class="header-icon-search-link"><img src="img/header-search-icon.svg" alt="Иконка поиска" class="header-search-incon-pic"></a>
                     </div>
                     <div class="header-auth">
                         <a href="#auth" class="header-auth-link">Вход</a>
@@ -38,6 +43,7 @@
                                 <li class="header-item"><a class="header-item-tests" href="#tests">Тесты</a></li>
                                 <li class="header-item"><a class="header-item-series" href="#series">Серии</a></li>
                                 <li class="header-item"><a class="header-item-rubric" href="#rubric">Рубрики</a></li>
+                                <li class="header-item"><a class="header-item-search" href="#search">Поиск</a></li>
                             </ul>
                         </nav>
                         <div class="header-search-icon">
@@ -64,9 +70,7 @@
                                     </div>
                                     <div class="notepad-caption">
                                         <p class="caption-text">
-                                            Решил немного написать про свою поделку. Несколько раз попадались разнообразные diy линейки. 
-                                            Захотелось сделать себе что-то подобное, многофункциональное. Форм-фактор линейки мне не очень подходил, 
-                                            решил сделать в виде блокнота.
+                                            Решил немного написать про свою поделку. Несколько раз попадались разнообразные diy линейки. Захотелось сделать себе что-то подобное, многофункциональное. <span class="not-divide">Форм-фактор</span> линейки мне не очень подходил, решил сделать в виде блокнота.
                                         </p>
                                     </div>
                                     <div class="notepad-smm">
@@ -168,9 +172,7 @@
                             </section>
                             <div class="annot">
                                 <p class="annot-text">
-                                    На сегодня это всё! Приходите завтра почитать <span class="annot-text-bold">об эффективной работе из дома,  о том как Crash<br>
-                                    Bandicoot взламывал Playstation,  о том с чего начиналось IT и об анатомии таблиц LuaJIT и особенностях<br> 
-                                    их использования.</span>
+                                    На сегодня это всё! Приходите завтра почитать <span class="annot-text-bold">об эффективной работе из дома,  о том как Crash Bandicoot взламывал Playstation,  о том с чего начиналось IT и об анатомии таблиц LuaJIT и особенностях их использования.</span>
                                 </p>
                             </div>
                         </div>
@@ -179,13 +181,15 @@
                                 <li class="list-of-best-item"><a href="#month" class="item-month underline">Лучшее за месяц</a></li>
                                 <li class="list-of-best-item"><a href="#year" class="item-year">Лучшее за год</a></li>
                                 <li class="list-of-best-item"><a href="#alltime" class="item-alltime">Лучшее за все время</a></li>
+                                <li class="list-of-best-item list-of-best-item-320"><a href="#year" class="item-year-320">Год</a></li>
+                                <li class="list-of-best-item list-of-best-item-320"><a href="#alltime" class="item-alltime-320">Все время</a></li>
                             </ul>
                             <div class="sign">
                                 <a href="#sign" class="sign-link"><img src="./img/sign.svg" alt="Указатель" class="sign-pic"></a>
                             </div>
                         </nav>
                         <div class="article">
-                            <div class="article-1">
+                            <div class="article-item article-1">
                                 <div class="article-1-wrapper">
                                     <p class="article-text">
                                         AI Против COVID-19: Опыт Хубэя и Флориды
@@ -210,7 +214,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="article-2">
+                            <div class="article-item article-2">
                                 <p class="article-text">
                                     Биологические проблемы багфикса
                                 </p>
@@ -233,7 +237,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="article-3">
+                            <div class="article-item article-3">
                                 <p class="article-text">
                                     Цели дня как инструмент управления командой
                                 </p>
@@ -279,17 +283,17 @@
                                         </li>
                                         <li class="block-list-item">
                                             <div class="block-list-item-text block-list-item-text-3">
-                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
                                             </div>
                                         </li>
                                         <li class="block-list-item">
-                                            <div class="block-list-item-text block-list-item-text-3">
-                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            <div class="block-list-item-text block-list-item-text-3 block-list-item-text-320">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
                                             </div>
                                         </li>
                                         <li class="block-list-item">
-                                            <div class="block-list-item-text block-list-item-text-3">
-                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            <div class="block-list-item-text block-list-item-text-3 block-list-item-text-320">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
                                             </div>
                                         </li>
                                     </ul>
@@ -298,7 +302,7 @@
                                     <a href="#" class=" block-link-text">Читать 27 статей</a>
                                 </div>
                             </div>
-                            <div class="block-content">
+                            <div class="block-content block-content-2">
                                 <div class="block-head">
                                     <h3 class="block-head-text">HARDWARE против заблуждений</h3>
                                 </div>
@@ -316,17 +320,54 @@
                                         </li>
                                         <li class="block-list-item">
                                             <div class="block-list-item-text block-list-item-text-3">
-                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3 block-list-item-text-320">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3 block-list-item-text-320">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="block-link">
+                                    <a href="#" class=" block-link-text">Читать 27 статей</a>
+                                </div>
+                            </div>
+                            <div class="block-content block-content-3">
+                                <div class="block-head">
+                                    <h3 class="block-head-text">HARDWARE против заблуждений</h3>
+                                </div>
+                                <div class="block-list-wrapper">
+                                    <ul class="block-list">
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text">
+                                                Мифы в IT-образовании
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text">
+                                                25 самых популярных мифов о программировании и программистах
                                             </div>
                                         </li>
                                         <li class="block-list-item">
                                             <div class="block-list-item-text block-list-item-text-3">
-                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
                                             </div>
                                         </li>
                                         <li class="block-list-item">
-                                            <div class="block-list-item-text block-list-item-text-3">
-                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих IT-заблуждений в истории
+                                            <div class="block-list-item-text block-list-item-text-3 block-list-item-text-320">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
+                                            </div>
+                                        </li>
+                                        <li class="block-list-item">
+                                            <div class="block-list-item-text block-list-item-text-3 block-list-item-text-320">
+                                                У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых вопиющих <span class="not-divide">IT-заблуждений</span> в истории
                                             </div>
                                         </li>
                                     </ul>
