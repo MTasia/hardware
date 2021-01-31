@@ -357,7 +357,7 @@
 		width: 550px;
 		height: 87px;
 		margin-top: 36px;
-		margin-left: 423px;
+		margin-left: 424px;
 	}
 
 	.header-caption p {
@@ -595,26 +595,10 @@
 	}
 
 	.header-item a:hover {
-        height: 24px;
-		background: #FAAF3F;
-		border-radius: 2px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		color: #FFFFFF;
-
-		align-items: center;
-		text-align: center;
-	}
-
-	.header-item:last-child a:hover {
 		background: none;
 		color: #000000;
-		width: 48px;
-		height: 17px;
-		padding-left: 10px;
 		display: flex;
-		align-items: center;
+		height: 17px;
 	}
 
 
@@ -789,16 +773,11 @@
 	}
 
 	.header-item a:hover {
-		height: 24px;
-		background: #FAAF3F;
-		border-radius: 2px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		color: #FFFFFF;
-
-		align-items: center;
-		text-align: center;
+		background: none;
+		color: #000000;
+		display: flex;
+		height: 17px;
+		margin-right: 11px;
 	}
 
 	.header-item-news {

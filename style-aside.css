@@ -46,6 +46,10 @@
         margin-left: -5px;
         background: url(./img/list-item.svg) no-repeat 0 5px;
         margin-bottom: 23px;
+	}
+	
+	.aside-list-item:hover {
+        background: url(./img/list-item-hover.svg) no-repeat 0 5px;
     }
     
     .aside-list-item-text {

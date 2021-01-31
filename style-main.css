@@ -215,7 +215,14 @@ html {
         height: 492px;
         background: url(./img/notepad.jpg);
         margin-bottom: 25px;
-    }
+	}
+	
+	.notepad-wrapper-link:hover {
+		background: url(./img/corner-1.svg)  no-repeat 0 5px;
+		/* background: url(./img/corner-2.svg)  no-repeat 0 5px;
+		background: url(./img/corner-3.svg)  no-repeat 0 5px;
+		background: url(./img/corner-4.svg)  no-repeat 0 5px; */
+	}
     
     .notepad-content {
         padding-top: 150px;
@@ -391,7 +398,15 @@ html {
     
     .item-alltime {
         width: 159px;
-    }
+	}
+	
+	.item-year-320 {
+		display: none;
+	}
+
+	.item-alltime-320 {
+		display: none;
+	}
     
     .list-of-best-item a{
         font-family: "PT Sans Bold", sans-serif;
@@ -471,7 +486,11 @@ html {
         background: #FFFFFF;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         margin-bottom: 30px;
-    }
+	}
+	
+	.block-link-320 {
+		display: none;
+	}
     
     .block-content-1 {
         margin-right: 30px;
@@ -530,7 +549,20 @@ html {
         line-height: 21px;
         color: #333333;
         margin-left: 24px;
-    }
+	}
+	
+	.block-item-link {
+		text-decoration: none;
+		color: #333333;
+	}
+
+	.block-list-item:hover {
+		background: url(./img/list-item-hover.svg) no-repeat 0 5px;
+	}
+
+	.block-item-link:hover {
+		color: #FAAF3F;
+	}
     
     .block-link{
         margin-left: 90px;
@@ -887,6 +919,14 @@ html {
 		width: 159px;
 	}
 
+	.item-year-320 {
+		display: none;
+	}
+
+	.item-alltime-320 {
+		display: none;
+	}
+
 	.list-of-best-item a{
 		font-family: "PT Sans Bold", sans-serif;
 		font-size: 17px;
@@ -965,6 +1005,10 @@ html {
 		background: #FFFFFF;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 		margin-bottom: 30px;
+	}
+
+	.block-link-320 {
+		display: none;
 	}
 
 	.block-content-1 {
@@ -1235,6 +1279,7 @@ html {
 	.notepad-smm {
 		display: flex;
 		justify-content: space-between;
+		margin-right: 10px;
 	}
 
 	.notpad-source {
@@ -1244,7 +1289,8 @@ html {
 
 	.notepad-smm-list {
 		display: flex;
-		margin-top: 8px;
+		margin-top: 6px;
+		margin-left: 522px;
 		width: 169px;
 		height: 17px;
 	}
@@ -1271,14 +1317,12 @@ html {
 	.antiquities-heading {
 		width: 314px;
 		height: 83px;
-		margin-bottom: 41px;
+		margin-bottom: 175px;
 	}
 
 	.antiquities-caption {
 		display: none;
-		width: 430px;
-		height: 100px;
-		margin-bottom: 36px;
+		margin-bottom: 0;
 	}
 
 	/*Просмотры, коментарии...*/
@@ -1329,6 +1373,7 @@ html {
 	.annot {
 		width: 791px;
 		height: 66px;
+		margin-left: -1px;
 		margin-bottom: 32px;
 	}
 
@@ -1412,7 +1457,7 @@ html {
 		display: flex;
 		width: 730px;
 		overflow: auto;
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 		margin-left: -1px;
 	}
 
@@ -1457,6 +1502,10 @@ html {
 		margin-left: 19px;
 	}
 
+	.heading-wrapper-top {
+		margin-top: 0;
+	}
+
 	/*block*/
 	.block {
 		display: flex;
@@ -1469,6 +1518,10 @@ html {
 		background: #FFFFFF;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 		margin-bottom: 30px;
+	}
+
+	.block-link-320 {
+		display: none;
 	}
 
 	.block-content-1 {
@@ -1661,7 +1714,7 @@ html {
 		font-size: 15px;
 		line-height: 24px;
 		color: #FFFFFF;
-		margin-bottom: 7px;
+		margin-bottom: 14px;
 	}
 
 	.datatime-text {
@@ -1829,8 +1882,8 @@ html {
 	.nav-list-of-best {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 37px;
-		margin-left: 15px;
+		margin-bottom: 39px;
+		margin-left: 16px;
 	}
 
 	.list-of-best {
@@ -1847,7 +1900,6 @@ html {
 
 	.list-of-best-item:last-child {
 		margin-right: 0;
-		margin-left: -10px;
 	}
 
 	.item-month {
@@ -1900,7 +1952,7 @@ html {
 		display: flex;
 		width: 769px;
 		overflow: auto;
-		margin-bottom: 28px;
+		margin-bottom: 11px;
 	}
 
 	.article-item {
@@ -1945,6 +1997,10 @@ html {
 		margin-left: 19px;
 	}
 
+	.heading-wrapper-top {
+		margin-top: 0;
+	}
+
 	/*block*/
 	.block {
 		padding-top: 5px;
@@ -1961,6 +2017,10 @@ html {
 		background: #FFFFFF;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 		margin-right: 20px;
+	}
+
+	.block-link-320 {
+		display: none;
 	}
 
 	.block-content-1 {
@@ -2022,6 +2082,14 @@ html {
 		margin-left: 24px;
 	}
 
+	.block-list-item:hover {
+		background: url(./img/list-item.svg) no-repeat 0 5px;
+	}
+
+	.block-item-link:hover {
+		color: #333333;
+	}
+
 	.block-link{
 		margin-left: 20px;
 		margin-top: 2px;
@@ -2080,10 +2148,10 @@ html {
 	/*Heading*/
 	.heading-wrapper {
 		width: 631px;
-		height: 39px;
-		margin-top: 26px;
-		margin-bottom: 33px;
-		margin-left: 15px;
+		height: 21px;
+		margin-top: 22px;
+		margin-bottom: 23px;
+		margin-left: 10px;
 
 		display: flex;
 		align-items: center;
@@ -2091,7 +2159,7 @@ html {
 
 	.heading {
 		font-family: "PT Sans Caption", sans-serif;
-		font-size: 28px;
+		font-size: 20px;
 		line-height: 22px;
 		letter-spacing: -0.02em;
 		color: #000000;
@@ -2149,7 +2217,7 @@ html {
 		font-size: 15px;
 		line-height: 24px;
 		color: #FFFFFF;
-		margin-bottom: 13px;
+		margin-bottom: 16px;
 	}
 
 	.datatime-text {
@@ -2203,7 +2271,7 @@ html {
 	}
 
 	.notepad-content {
-		padding-top: 72px;
+		padding-top: 113px;
 		color: #FFFFFF;
 		margin-left: 15px;
 		margin-right: 20px;
@@ -2212,6 +2280,7 @@ html {
 	.notepad-heading {
 		width: 290px;
 		height: 102px;
+		margin-bottom: 41px;
 
 		display: flex;
 		align-items:flex-start;
@@ -2219,11 +2288,18 @@ html {
 
 	.notepad-caption {
 		display: none;
+		margin-bottom: 0;
 	}
 
 	/*Просмотры, коментарии...*/
 	.notepad-smm {
+		display: block;
 		margin-left: -1px;
+	}
+
+	.notepad-smm-list {
+		margin-left: 0;
+		margin-top: 0;
 	}
 
 	/*Section antiquities*/
@@ -2235,18 +2311,24 @@ html {
 	}
 
 	.antiquities-content {
-		padding-top: 72px;
+		padding-top: 113px;
 		color: #FFFFFF;
 		margin-left: 15px;
+	}
+
+	.antiquities-link {
+		width: 104px;
 	}
 
 	.antiquities-heading {
 		width: 290px;
 		height: 102px;
+		margin-bottom: 41px;
 	}
 
 	.antiquities-caption {
 		display: none;
+		margin-bottom: 0;
 	}
 
 	/*Просмотры, коментарии...*/
@@ -2259,32 +2341,42 @@ html {
 		width: 320px;
 		height: 386px;
 		background: url(./img/cluster-elasticsearch-320.jpg);
-		margin-bottom: 30px;
+		margin-bottom: 27px;
 	}
 
 	.cluster-elasticsearch-content {
-		padding-top: 72px;
+		padding-top: 113px;
 		color: #FFFFFF;
 		margin-left: 15px;
+	}
+
+	.cluster-elasticsearch-link {
+		width: 104px;
 	}
 
 	.cluster-elasticsearch-heading {
 		width: 290px;
 		height: 102px;
-		margin-bottom: 117px;
+		margin-bottom: 41px;
 	}
 
 	/*Просмотры, коментарии...*/
 	.cluster-elasticsearch-smm {
+		width: 294px;
+		height: 50px;
 		margin-left: -1x;
+	}
+
+	.cluster-elasticsearch-smm-list {
+		margin-top: 0;
 	}
 
 	/*На сегодня все...*/
 	.annot {
 		width: 285px;
 		height: 166px;
-		margin-left: 15px;
-		margin-bottom: 34px;
+		margin-left: 17px;
+		margin-bottom: 31px;
 	}
 
 	.annot-text {
@@ -2302,8 +2394,8 @@ html {
 	.nav-list-of-best {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 37px;
-		margin-left: 15px;
+		margin-bottom: 28px;
+		margin-left: 16px;
 	}
 
 	.list-of-best {
@@ -2377,7 +2469,7 @@ html {
 		display: flex;
 		width: 305px;
 		overflow: auto;
-		margin-bottom: 28px;
+		margin-bottom: 10px;
 		margin-left: 14px;
 	}
 
@@ -2402,7 +2494,7 @@ html {
 	}
 
 	.article-text {
-		width: 200px;
+		width: 227px;
 		height: 48px;
 		padding-top: 14px;
 		margin-left: 20px;
@@ -2420,8 +2512,13 @@ html {
 	}
 
 	/*block*/
+	.heading-wrapper-320 {
+		display: none;
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+
 	.block {
-		padding-top: 5px;
 		display: flex;
 		width: 730px;
 	}
@@ -2443,11 +2540,24 @@ html {
 		display :none;
 	}
 
+	.block-link-320 {
+		width: 92px;
+		height: 24px;
+		background: #333333;
+		border-radius: 2px;
+		display: flex;
+		align-items: center;
+		margin-top: 19px;
+		margin-left: 20px;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+
 	.block-head {
 		width: 250px;
 		height: 46px;
-		margin-top: 21px;
 		margin-left: 20px;
+		margin-top: 0;
 		margin-bottom: 12px;
 	}
 
@@ -2463,26 +2573,25 @@ html {
 		background: linear-gradient(to top, #FFFFFF, #828282,  #828282,  #828282,  #828282, #FFFFFF);
 		width: 1px;
 		margin-left: 21px;
-		height: 254px;
-		margin-bottom: 30px;
+		height: 221px;
+		margin-bottom: 24px;
 	}
 
 	.block-list {
-		padding-top: 15px;
 		margin-right: 22px;
 		list-style: none;
-		width: 203px;
+		width: 216px;
 	}
 
 	.block-list-item {
 		margin-left: -5px;
-		margin-bottom: 25px;
+		margin-bottom: 17px;
 		background: url(./img/list-item.svg) no-repeat 0 5px;   
 	}
 
 	.block-list-item-text-3 {
-		margin-top: -1px;
-		width: 203px;
+		margin-top: -5px;
+		width: 213px;
 		height: 86px;
 	}
 
@@ -2495,7 +2604,16 @@ html {
 		font-size: 15px;
 		line-height: 21px;
 		color: #333333;
-		margin-left: 24px;
+		width: 203;
+		margin-left: 19px;
+	}
+
+	.block-list-item:hover {
+		background: url(./img/list-item.svg) no-repeat 0 5px;
+	}
+
+	.block-item-link:hover {
+		color: #333333;
 	}
 
 	.block-link{
