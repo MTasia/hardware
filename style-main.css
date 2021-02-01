@@ -207,7 +207,15 @@ html {
         display: flex;
         align-items: center;
         text-align: center;
-    }
+	}
+	
+	.hover:hover {
+		height: 492px;
+		background: url(./img/corner-1.svg) top 8px left 8px/20px 20px no-repeat,
+					url(./img/corner-2.svg) top 8px right 8px/20px 20px no-repeat,
+					url(./img/corner-3.svg) bottom 8px left 8px/20px 20px no-repeat,
+					url(./img/corner-4.svg) bottom 8px right 8px/20px 20px no-repeat;
+	}
     
     /*Section notepad*/
     .notepad-wrapper {
@@ -215,13 +223,6 @@ html {
         height: 492px;
         background: url(./img/notepad.jpg);
         margin-bottom: 25px;
-	}
-	
-	.notepad-wrapper-link:hover {
-		background: url(./img/corner-1.svg)  no-repeat 0 5px;
-		/* background: url(./img/corner-2.svg)  no-repeat 0 5px;
-		background: url(./img/corner-3.svg)  no-repeat 0 5px;
-		background: url(./img/corner-4.svg)  no-repeat 0 5px; */
 	}
     
     .notepad-content {
@@ -253,7 +254,8 @@ html {
     /*Просмотры, коментарии...*/
     .notepad-smm {
         display: flex;
-        justify-content: space-between;
+		justify-content: space-between;
+		margin-bottom: 30p;
     }
     
     .notpad-source {
@@ -278,7 +280,7 @@ html {
         margin-bottom: 28px;
         margin-right: 25px;
     }
-    
+
     .antiquities-content {
         padding-top: 85px;
         color: #FFFFFF;
@@ -1757,6 +1759,11 @@ html {
 		display: flex;
 		align-items: center;
 		text-align: center;
+	}
+
+	.hover:hover {
+		background: none;
+		height: 0;
 	}
 
 	/*Section notepad*/
