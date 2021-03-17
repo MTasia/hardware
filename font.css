@@ -1,0 +1,53 @@
+@font-face {
+  font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("./fonts/PTSans-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("./fonts/PTSansCaption-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: bold;
+  src:
+      url("./fonts/PTSans-Bold.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Brutal Type";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("./fonts/BrutalRegular.woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Brutal Type Medium";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("./fonts/BrutalMedium.woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Brutal Type Bold";
+  font-style: normal;
+  font-weight: bold;
+  src:
+    url("./fonts/BrutalBold.woff");
+}

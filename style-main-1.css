@@ -1,0 +1,1114 @@
+/*notepad antiquities cluster-elasticsearch*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: initial;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+html {
+    box-sizing: border-box;
+    background: #E5E5E5;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.body-wrapper {
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+.main {
+    display: flex;
+    margin: 0 auto;
+}
+
+.not-divide {
+    white-space: nowrap;
+}
+
+.heading {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.issue-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hover-img img{
+    position: absolute;
+    opacity: 0;
+}
+
+.topic {
+    background: #FAAF3F;
+    border-radius: 2px;
+    font-family: "Brutal Type Medium";
+    font-size: 14px;
+    line-height: 18px;
+    
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.item-heading {
+    font-family: "Brutal Type Bold", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.item-text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.source-text {
+    font-family: "PT Sans Bold", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.datatime-text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 10px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.smm-list {
+    display: flex;
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.smm-item div{
+    display: flex;
+}
+
+.smm-item {
+    margin-right: 10px;
+}
+
+.smm-item:last-child {
+    margin-right: 0;
+}
+
+.smm-item img {
+    margin-right: 5px;
+}
+
+.numbers {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 10px;
+    line-height: 16px;
+    padding-top: 3px;
+}
+
+@media (min-width: 1920px) {
+    .body-wrapper {
+        width: 1200px;
+    }
+
+    .main {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .main-wrapper {
+		margin-right: 20px;
+        width: 790px;
+    }
+
+    .heading {
+        margin: 38px 0;
+    }    
+
+    /*notepad*/
+    .notepad {
+        width: 749px;
+        height: 492px;
+        background: url(./img/notepad.jpg);
+        padding: 0 20px 0;
+        margin-left: 1px;
+        margin-bottom: 25px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .notepad .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .notepad:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-2{
+		margin-top: 8px;
+        margin-left: 741px;
+	}
+
+	.notepad:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.notepad:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-4{
+		margin-top: 464px;
+        margin-left: 741px;
+	}
+
+	.notepad:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .topic {
+        padding: 3px 10px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 150px;
+        margin-bottom: 41px;
+    }
+
+    .notepad .item-heading {
+        width: 558px;
+        margin-bottom: 45px;
+    }
+
+    .notepad .item-text  {
+        margin-bottom: 45px;
+    }
+
+    .notepad .smm {
+        display: flex;
+		justify-content: space-between;
+    }
+
+    /*Antiquities*/
+    .antiquities {
+		width: 477px;
+		height: 492px;
+		background: url(./img/antiquities.jpg);
+        padding: 0 20px 0;
+        margin-left: 1px;
+        margin-bottom: 28px;
+        text-decoration: none;
+        color: #FFFFFF;
+        margin-right: 24px;
+	}
+
+    .antiquities .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .antiquities:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-2{
+		margin-top: 8px;
+        margin-left: 469px;
+	}
+
+	.antiquities:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.antiquities:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-4{
+		margin-top: 464px;
+        margin-left: 469px;
+	}
+
+	.antiquities:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .topic {
+        text-align: center;
+        padding: 3px 10px 7px 10px;
+        width: 98px;
+		height: 14px;
+        margin-top: 85px;
+        margin-bottom: 40px;
+    }
+
+    .antiquities .item-heading {
+        width: 430px;
+		margin-bottom: 65px;
+    }
+
+    .antiquities .item-text  {
+        width: 430px;
+        margin-bottom: 39px;
+    }
+
+    .antiquities .source-text {
+        margin-bottom: 5px;
+    }
+
+    /*Cluster-elasticsearch*/
+    .cluster-elasticsearch {
+        width: 207px;
+		height: 492px;
+		background: url(./img/cluster-elasticsearch.jpg);
+        padding: 0 20px 0;
+        margin-left: 1px;
+        margin-bottom: 28px;
+        text-decoration: none;
+        color: #FFFFFF;
+	}
+
+    .cluster-elasticsearch .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .cluster-elasticsearch:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-2{
+		margin-top: 8px;
+        margin-left: 199px;
+	}
+
+	.cluster-elasticsearch:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.cluster-elasticsearch:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-4{
+		margin-top: 464px;
+        margin-left: 199px;
+	}
+
+	.cluster-elasticsearch:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .topic {
+        text-align: center;
+        padding: 3px 10px 7px 10px;
+        width: 98px;
+		height: 14px;
+        margin-top: 85px;
+        margin-bottom: 40px;
+    }
+
+    .cluster-elasticsearch .item-heading {
+        width: 217px;
+		margin-bottom: 170px;
+    }
+
+    .cluster-elasticsearch .smm {
+        margin-left: -1px;
+    }
+
+    .cluster-elasticsearch .source-text {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .body-wrapper {
+        width: 1200px;
+    }
+
+    .main {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .main-wrapper {
+        width: 790px;
+		margin-right: 20px;
+    }
+
+    .heading {
+        margin: 38px 0;
+    } 
+
+    /*notepad*/
+    .notepad {
+        width: 749px;
+        height: 492px;
+        background: url(./img/notepad.jpg);
+        padding: 0 20px 0;
+        margin-left: 1px;
+        margin-bottom: 25px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .notepad .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .notepad:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-2{
+		margin-top: 8px;
+        margin-left: 741px;
+	}
+
+	.notepad:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.notepad:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-4{
+		margin-top: 464px;
+        margin-left: 741px;
+	}
+
+	.notepad:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .topic {
+        padding: 3px 10px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 150px;
+        margin-bottom: 41px;
+    }
+
+    .notepad .item-heading {
+        width: 558px;
+        margin-bottom: 45px;
+    }
+
+    .notepad .item-text  {
+        margin-bottom: 45px;
+    }
+
+    .notepad .smm {
+        display: flex;
+		justify-content: space-between;
+    }
+
+    /*antiquities*/
+    .antiquities {
+		width: 477px;
+		height: 492px;
+		background: url(./img/antiquities.jpg);
+        padding: 0 20px 0;
+        margin-left: 1px;
+        margin-bottom: 27px;
+        text-decoration: none;
+        color: #FFFFFF;
+        margin-right: 24px;
+	}
+
+    .antiquities .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .antiquities:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-2{
+		margin-top: 8px;
+        margin-left: 469px;
+	}
+
+	.antiquities:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.antiquities:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-4{
+		margin-top: 464px;
+        margin-left: 469px;
+	}
+
+	.antiquities:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .topic {
+        text-align: center;
+        padding: 3px 10px 7px 10px;
+        width: 98px;
+		height: 14px;
+        margin-top: 85px;
+        margin-bottom: 40px;
+    }
+
+    .antiquities .item-heading {
+        width: 430px;
+		margin-bottom: 65px;
+    }
+
+    .antiquities .item-text  {
+        width: 430px;
+        margin-bottom: 39px;
+    }
+
+    .antiquities .source-text {
+        margin-bottom: 5px;
+    }
+
+    /*Cluster-elasticsearch*/
+    .cluster-elasticsearch {
+        width: 207px;
+		height: 492px;
+		background: url(./img/cluster-elasticsearch.jpg);
+        padding: 0 20px 0;
+        margin-left: 1px;
+        margin-bottom: 26px;
+        text-decoration: none;
+        color: #FFFFFF;
+	}
+
+    .cluster-elasticsearch .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .cluster-elasticsearch:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-2{
+		margin-top: 8px;
+        margin-left: 199px;
+	}
+
+	.cluster-elasticsearch:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.cluster-elasticsearch:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-4{
+		margin-top: 464px;
+        margin-left: 199px;
+	}
+
+	.cluster-elasticsearch:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .topic {
+        text-align: center;
+        padding: 3px 10px 7px 10px;
+        width: 98px;
+		height: 14px;
+        margin-top: 85px;
+        margin-bottom: 40px;
+    }
+
+    .cluster-elasticsearch .item-heading {
+        width: 217px;
+		margin-bottom: 170px;
+    }
+
+    .cluster-elasticsearch .smm {
+        margin-left: -1px;
+    }
+
+    .cluster-elasticsearch .source-text {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .body-wrapper {
+        width: 1024px;
+    }
+
+    .main {
+        margin: 0 10px 0 11px;
+    }
+
+    .main-wrapper {
+        width: 731px;
+		margin-right: 20px;
+    }
+
+    .heading {
+        margin: 28px 0 43px;
+    }  
+
+    /*notepad*/
+    .notepad {
+        width: 690px;
+        height: 492px;
+        background: url(./img/notepad.jpg);
+        padding: 0 20px 0;
+        margin-left: 2px;
+        margin-bottom: 25px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .notepad .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .notepad:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-2{
+		margin-top: 8px;
+        margin-left: 682px;
+	}
+
+	.notepad:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.notepad:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .corner-4{
+		margin-top: 464px;
+        margin-left: 682px;
+	}
+
+	.notepad:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .notepad .topic {
+        padding: 3px 10px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 150px;
+        margin-bottom: 41px;
+    }
+
+    .notepad .item-heading {
+        width: 558px;
+        margin-bottom: 45px;
+    }
+
+    .notepad .item-text  {
+        margin-bottom: 44px;
+    }
+
+    .notepad .smm {
+        display: flex;
+		justify-content: space-between;
+    }
+
+    .notepad .smm-list {
+        padding-top: 3px;
+    }
+
+    /*antiquities*/
+    .antiquities {
+		width: 314px;
+		height: 492px;
+		background: url(./img/antiquities.jpg);
+        padding: 0 20px 0;
+        margin-left: 2px;
+        margin-bottom: 27px;
+        margin-right: 21px;
+        text-decoration: none;
+        color: #FFFFFF;
+	}
+
+    .antiquities .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .antiquities:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-2{
+		margin-top: 8px;
+        margin-left: 306px;
+	}
+
+	.antiquities:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.antiquities:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .corner-4{
+        margin-top: 464px;
+        margin-left: 306px;
+	}
+
+	.antiquities:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .antiquities .topic {
+        text-align: center;
+        padding: 3px 10px 7px 10px;
+        width: 98px;
+		height: 14px;
+        margin-top: 85px;
+        margin-bottom: 40px;
+    }
+
+    .antiquities .item-heading {
+        width: 314px;
+		margin-bottom: 171px;
+    }
+
+    .antiquities .item-text  {
+        display: none;
+    }
+
+    .antiquities .source-text {
+        margin-bottom: 5px;
+    }
+
+    /*cluster-elasticsearch*/
+    .cluster-elasticsearch {
+        width: 314px;
+		height: 492px;
+		background: url(./img/cluster-elasticsearch.jpg);
+        padding: 0 20px 0;
+        margin-bottom: 27px;
+        text-decoration: none;
+        color: #FFFFFF;
+	}
+
+    .cluster-elasticsearch .corner-1{
+		margin-top: 8px;
+        margin-left: -12px;
+	}
+
+    .cluster-elasticsearch:hover .corner-1{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-2{
+		margin-top: 8px;
+        margin-left: 306px;
+	}
+
+	.cluster-elasticsearch:hover .corner-2{		
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-3{
+		margin-top: 464px;
+        margin-left: -12px;
+	}
+
+	.cluster-elasticsearch:hover .corner-3{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .corner-4{
+		margin-top: 464px;
+        margin-left: 306px;
+	}
+
+	.cluster-elasticsearch:hover .corner-4{
+		transition: 1s ease;
+		opacity: 1;
+	}
+
+    .cluster-elasticsearch .topic {
+        text-align: center;
+        padding: 3px 10px 7px 10px;
+        width: 98px;
+		height: 14px;
+        margin-top: 85px;
+        margin-bottom: 40px;
+    }
+
+    .cluster-elasticsearch .item-heading {
+        width: 217px;
+		margin-bottom: 171px;
+    }
+
+    .cluster-elasticsearch .smm {
+        margin-left: -1px;
+    }
+
+    .cluster-elasticsearch .source-text {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .body-wrapper {
+        width: 100%;
+    }
+
+    .main-wrapper {
+        width: 100%;
+    }
+
+    .heading {
+        margin: 35px 15px 40px;
+    } 
+
+    /*notepad*/
+    .notepad {
+        width: 100%;
+		height: 386px;
+		background: url(./img/notepad-768.jpg);
+        background-size: 100%;
+        padding: 0 20px 0;
+        margin-bottom: 25px;
+        text-decoration: none;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    .notepad .topic {
+        padding: 3px 10px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 72px;
+        margin-bottom: 25px;
+    }
+
+    .notepad .item-heading {
+        width: 558px;
+        margin-bottom: 140px;
+    }
+
+    .notepad .item-text  {
+        display: none;
+    }
+
+    .notepad .smm {
+        margin-left: 11px;
+    }
+
+    .notepad .source-text {
+        margin-bottom: 1px;
+    }
+
+    /*antiquities*/
+    .antiquities {
+		width: 100%;
+		height: 386px;
+		background: url(./img/antiquities-768.jpg);
+        background-size: 100%;
+        padding: 0 20px 0;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: #FFFFFF;
+	}
+
+    .antiquities .topic {
+        text-align: center;
+        padding: 3px 10px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 72px;
+        margin-bottom: 25px;
+    }
+
+    .antiquities .item-heading {
+        width: 558px;
+		margin-bottom: 140px;
+    }
+
+    .antiquities .item-text  {
+        display: none;
+    }
+
+    .antiquities .smm {
+        margin-left: 11px;
+    }
+
+    .antiquities .source-text {
+        margin-bottom: 1px;
+    }
+
+    /*cluster-elasticsearch*/
+    .cluster-elasticsearch {
+        width: 100%;
+		height: 386px;
+		background: url(./img/cluster-elasticsearch-768.jpg);
+        background-size: 100%;
+        padding: 0 20px 0;
+        margin-bottom: 27px;
+        text-decoration: none;
+        color: #FFFFFF;
+	}
+
+    .cluster-elasticsearch .topic {
+        text-align: center;
+        padding: 3px 10px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 72px;
+        margin-bottom: 25px;
+    }
+    .cluster-elasticsearch .item-heading {
+        width: 558px;
+		margin-bottom: 170px;
+    }
+
+    .cluster-elasticsearch .smm {
+        margin-left: 11px;
+    }
+
+    .cluster-elasticsearch .source-text {
+        margin-bottom: 1px;
+    }
+}
+
+@media (max-width: 768px) {
+    .body-wrapper {
+        width: 100%;
+        min-width: 320px;
+    }
+
+    .heading {
+        font-size: 20px;
+        margin: 21px 11px 23px;
+    } 
+
+    .main-wrapper {
+        width: 100%;
+        min-width: 320px;
+    }
+
+    /*notepad*/
+    .notepad {
+        width: 100%;
+        min-width: 290px;
+		height: 386px;
+		background: url(./img/notepad-320.jpg);
+        background-size: 100%;
+        padding: 0 15px 0;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    .notepad .topic {
+        padding: 3px 10px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 113px;
+        margin-bottom: 25px;
+    }
+
+    .notepad .item-heading {
+        font-size: 20px;
+        line-height: 28px;
+        width: 290px;
+        margin-bottom: 61px;
+    }
+
+    .notepad .item-text  {
+        display: none;
+    }
+
+    .notepad .smm {
+        margin-left: -1px;
+    }
+
+    .notepad .source-text {
+        margin-bottom: 3px;
+    }
+
+    /*antiquities*/
+    .antiquities {
+		width: 100%;
+        min-width: 290px;
+		height: 386px;
+		background: url(./img/antiquities-320.jpg);
+        background-size: 100%;
+        padding: 0 15px 0;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: #FFFFFF;
+	}
+
+    .antiquities .topic {
+        text-align: center;
+        padding: 3px 3px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 113px;
+        margin-bottom: 25px;
+    }
+
+    .antiquities .item-heading {
+        font-size: 20px;
+        line-height: 28px;  
+        width: 290px;
+		margin-bottom: 61px;
+    }
+
+    .antiquities .item-text  {
+        display: none;
+    }
+
+    .antiquities .smm {
+        margin-left: -1px;
+    }
+
+    .antiquities .source-text {
+        margin-bottom: 3px;
+    }
+
+    /*cluster-elasticsearch*/
+    .cluster-elasticsearch {
+        width: 100%;
+        min-width: 290px;
+		height: 386px;
+		background: url(./img/cluster-elasticsearch-320.jpg);
+        background-size: 100%;
+        padding: 0 15px 0;
+        margin-bottom: 27px;
+        text-decoration: none;
+        color: #FFFFFF;
+	}
+
+    .cluster-elasticsearch .topic {
+        text-align: center;
+        padding: 3px 3px 7px;
+        width: 98px;
+		height: 14px;
+        margin-top: 113px;
+        margin-bottom: 25px;
+    }
+
+    .cluster-elasticsearch .item-heading {
+        font-size: 20px;
+        line-height: 28px;
+        width: 290px;
+		margin-bottom: 88px;
+    }
+
+    .cluster-elasticsearch .smm {
+        margin-left: -1px;
+    }
+
+    .cluster-elasticsearch .source-text {
+        margin-bottom: 3px;
+    }
+}
